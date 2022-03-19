@@ -5,18 +5,17 @@ import {
   Button,
 } from 'react-native';
 
-
-const App = () => {
+const HomeScreen = ()=>{
   const [enthusiasmlevel, setEnthusiasmlevel] = useState(1);
   
   const increment = ()=> setEnthusiasmlevel(enthusiasmlevel +1);
   const decrement = ()=> setEnthusiasmlevel(enthusiasmlevel -1);
 
   const getExclamationMarks = (numChars: number)=> numChars > 0 ? Array(numChars+1).join('!') : '';
-  
+
   return (
     <View>
-      <Text>Hello 
+      <Text>Hello
         {getExclamationMarks(enthusiasmlevel)}
       </Text>
       <View>
@@ -24,6 +23,13 @@ const App = () => {
         <Button title="Decrease Enthusiasm" onPress={decrement} color="red" />
       </View>
     </View>
+  )
+}
+
+const App = () => {
+  
+  return (
+    <HomeScreen />     
   );
 };
 
