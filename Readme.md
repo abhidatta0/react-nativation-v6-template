@@ -1,6 +1,6 @@
 ### react-navigationv6-template
 
-## A template for getting features on  top of [@react-navigation](https://reactnavigation.org/) v6
+## A typescript-enabled template for adding features on  top of [@react-navigation](https://reactnavigation.org/) v6
 
 ## Navigators added
 | Navigation      | Branch |
