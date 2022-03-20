@@ -2,11 +2,8 @@
 
 ## A template for getting features on  top of [@react-navigation](https://reactnavigation.org/) v6
 
-## Navigators added
-| Navigation      | Branch |
-| ----------- | ----------- |
-| Native Navigator      | [native-stack](https://github.com/abhidatta0/react-nativation-v6-template/tree/native-stack)       |
-| Bottom Navigator   | [bottom-navigation](https://github.com/abhidatta0/react-nativation-v6-template/tree/bottom-navigation)        |
+<img src="./Gifs/Bottom navigation.gif" width="210" height="450" />
+
 
 
 ## How to run
