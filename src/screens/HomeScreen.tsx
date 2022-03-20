@@ -1,7 +1,11 @@
 import React, {useState} from 'react';
+import type { BottomTabScreenProps } from '@react-navigation/bottom-tabs';
 import {View, Text, Button, StyleSheet, TouchableOpacity} from 'react-native';
+import {RootStackParamList } from '../../App';
 
-const HomeScreen = ()=>{
+type Props = BottomTabScreenProps<RootStackParamList,"Home">;
+
+const HomeScreen = ({navigation}:Props)=>{
   const [enthusiasmlevel, setEnthusiasmlevel] = useState(1);
   
   const increment = ()=> setEnthusiasmlevel(enthusiasmlevel +1);
@@ -9,6 +13,10 @@ const HomeScreen = ()=>{
 
   const getExclamationMarks = (numChars: number)=> numChars > 0 ? Array(numChars+1).join('!') : '';
 
+  const handleNavigation = (screenName: keyof RootStackParamList)=>{
+    console.log(screenName);
+    navigation.navigate(screenName);
+  }
   return (
     <View style={styles.container}>
       <Text>Hello
@@ -20,10 +28,10 @@ const HomeScreen = ()=>{
       </View>
 
       <View style={styles.touchables}>
-        <TouchableOpacity style={[styles.screenButtons, {marginBottom: 10}]}>
+        <TouchableOpacity style={[styles.screenButtons, {marginBottom: 10}]} onPress={()=> handleNavigation('Screen1')}>
           <Text>Screen 1</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.screenButtons}>
+        <TouchableOpacity style={styles.screenButtons} onPress={()=> handleNavigation('Screen2')}>
           <Text>Screen 2</Text>
         </TouchableOpacity>
       </View>
