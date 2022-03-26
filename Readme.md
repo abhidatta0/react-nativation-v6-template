@@ -7,7 +7,7 @@
 | ----------- | ----------- |
 | Native Navigator      | [native-stack](https://github.com/abhidatta0/react-nativation-v6-template/tree/native-stack)       |
 | Bottom Navigator   | [bottom-navigation](https://github.com/abhidatta0/react-nativation-v6-template/tree/bottom-navigation)        |
-
+| Material Bottom Navigator   | [material-bottom-navigation](https://github.com/abhidatta0/react-navigation-v6-template/tree/material-bottom-navigation)        |
 
 ## How to run
 - Clone the repo
